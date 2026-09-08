@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
+import { FooterContent } from "@/components/FooterContent";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -20,10 +21,15 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
+      className={cn("antialiased", "h-svh", fontMono.variable, "font-sans", geist.variable)}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="h-svh flex flex-col overflow-hidden">
+        <main className="flex flex-1 overflow-y-auto">
+          <ThemeProvider>{children}</ThemeProvider>
+        </main>
+        <footer className="shrink-0">
+          <FooterContent />
+        </footer>
       </body>
     </html>
   )
