@@ -1,4 +1,10 @@
 import { Button } from "@/components/ui/button"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Your friendly neighborhood dev',
+  description: 'Welcome to my portfolio site!',
+}
 
 export default function Page() {
   return (
