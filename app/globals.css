@@ -127,9 +127,3 @@
     @apply font-sans;
     }
 }
-
-@layer components {
-  .section-container {
-    @apply lg:px-48 py-16;
-  }
-}

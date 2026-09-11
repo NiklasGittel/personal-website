@@ -1,10 +1,10 @@
 import { Mail } from "lucide-react"
 import { Button } from "./ui/button"
+import SectionContainer from "./SectionContainer"
 
 const IntroSection = () => {
     return (
-        <div className="section-container" id="intro">
-            <div className="max-w-md min-w-0 flex flex-col gap-4 ">
+        <SectionContainer id="intro">
                 <h1 className="text-2xl font-bold">Hey there!</h1>
                 <p className="text-muted-foreground">I love to build stuff and write code. Currently looking for a start-up or project to pour my heart into.</p>
                 <div className="flex flex-row gap-2 mt-2">
@@ -16,8 +16,7 @@ const IntroSection = () => {
                         View projects
                     </Button>
                 </div>
-            </div>
-        </div>
+        </SectionContainer>
     )
 }
 
