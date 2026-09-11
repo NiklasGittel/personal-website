@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 
 const IntroSection = () => {
     return (
-        <div className="section-container">
+        <div className="section-container" id="intro">
             <div className="max-w-md min-w-0 flex flex-col gap-4 ">
                 <h1 className="text-2xl font-bold">Hey there!</h1>
                 <p className="text-muted-foreground">I love to build stuff and write code. Currently looking for a start-up or project to pour my heart into.</p>
@@ -12,7 +12,7 @@ const IntroSection = () => {
                         <Mail />
                         Get in touch
                     </Button>
-                    <Button variant="outline">
+                    <Button variant="outline" render={<a href="#projects" />} nativeButton={false}>
                         View projects
                     </Button>
                 </div>
