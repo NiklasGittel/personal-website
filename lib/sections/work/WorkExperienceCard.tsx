@@ -2,22 +2,26 @@ import { Card, CardHeader, CardContent, CardDescription, CardTitle } from "../..
 
 import { WorkExperience } from "./workExperience"
 
-const WorkExperienceCard = (exp: WorkExperience) => {
-    const addHyphen = exp.details.length > 1
+interface WorkExperienceCardProps {
+    work: WorkExperience;
+}
+
+const WorkExperienceCard = ({ work}: WorkExperienceCardProps) => {
+    const addHyphen = work.details.length > 1
     return (
         <Card className="min-w-full">
             <CardHeader>
                 <CardTitle className="flex flex-row justify-between w-full">
-                    {exp.title}
-                    <span className="text-muted-foreground text-sm">{exp.date}</span>
+                    {work.title}
+                    <span className="text-muted-foreground text-sm">{work.date}</span>
                 </CardTitle>
                 <CardDescription>
-                    {exp.company}
+                    {work.company}
                 </CardDescription>
             </CardHeader>
             <CardContent>
                 <ul className="list-inside space-y-2">
-                    {exp.details.map((detail, index) => (
+                    {work.details.map((detail, index) => (
                         detail.subDetails && detail.subDetails.length > 0
                             ? (
                                 <li key={index} className="flex flex-col gap-2">
