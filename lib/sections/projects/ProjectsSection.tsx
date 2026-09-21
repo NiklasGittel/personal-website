@@ -4,7 +4,7 @@ import projects from "./projects"
 
 const ProjectsSection = () => {
     return (
-        <Section id="projects" title="Projects" subtitle="Some of my recent work">
+        <Section id="projects" title="Projects" subtitle="Some projects I've worked on">
             {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
             ))}
