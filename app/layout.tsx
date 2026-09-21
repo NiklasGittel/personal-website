@@ -29,8 +29,7 @@ export default function RootLayout({
           <ThemeProvider>{children}</ThemeProvider>
         </main>
         <SectionNavigator />
-
-        <footer className="shrink-0">
+        <footer className="fixed bottom-0 left-0 w-full shrink-0 z-50 bg-background/80 backdrop-blur-sm">
           <FooterContent />
         </footer>
       </body>
