@@ -13,7 +13,7 @@ const Section = ({ id, title, subtitle, children }: { id: string, title?: string
                         </div>
                         : null}
                     {children}
-                    <Separator />
+                    <Separator className="mt-16" />
                 </>
             </SectionContentContainer>
         </section>
