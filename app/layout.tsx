@@ -24,8 +24,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", "h-svh", fontMono.variable, "font-sans", geist.variable)}
     >
-      <body className="h-svh flex flex-col overflow-hidden">
-        <main className="flex flex-1 overflow-y-auto">
+      <body className="min-h-screen flex flex-col">
+        <main className="flex flex-1">
           <ThemeProvider>{children}</ThemeProvider>
           <SectionNavigator />
         </main>
