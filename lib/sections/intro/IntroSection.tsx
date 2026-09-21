@@ -1,7 +1,6 @@
 import { Mail } from "lucide-react"
 import Section from "../../../components/Section/Section"
 import { Button } from "../../../components/ui/button"
-import { Separator } from "../../../components/ui/separator"
 
 const IntroSection = () => {
     return (

@@ -1,3 +1,4 @@
+import { Separator } from "../ui/separator"
 import SectionContentContainer from "./SectionContentContainer"
 
 const Section = ({ id, title, subtitle, children }: { id: string, title?: string, subtitle?: string, children?: React.ReactNode }) => {
@@ -12,6 +13,7 @@ const Section = ({ id, title, subtitle, children }: { id: string, title?: string
                         </div>
                         : null}
                     {children}
+                    <Separator />
                 </>
             </SectionContentContainer>
         </section>

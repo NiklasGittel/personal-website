@@ -14,9 +14,7 @@ export default function Page() {
   return (
     <div className="flex flex-col min-h-svh w-full">
       <IntroSection />
-      <Separator />
       <WorkSection />
-      <Separator />
       <ProjectsSection />
     </div>
   )

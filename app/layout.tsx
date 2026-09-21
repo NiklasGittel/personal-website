@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { FooterContent } from "@/components/FooterContent";
+import SectionNavigator from "@/components/SectionNavigator";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="h-svh flex flex-col overflow-hidden">
         <main className="flex flex-1 overflow-y-auto">
           <ThemeProvider>{children}</ThemeProvider>
+          <SectionNavigator />
         </main>
         <footer className="shrink-0">
           <FooterContent />
