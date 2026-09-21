@@ -56,7 +56,7 @@ const SectionNavigator = () => {
     }, []);
 
     return (
-        <nav className="fixed top-1/2 -translate-y-1/2 left-4 group">
+        <nav className="fixed top-1/2 -translate-y-1/2 left-2 sm:left-4 group hidden md:block">
             <ul className="flex flex-col gap-3">
                 {sections.map((section) => {
                     const isActive = activeId === section.id;

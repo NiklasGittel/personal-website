@@ -11,7 +11,7 @@ const WorkExperienceCard = ({ work}: WorkExperienceCardProps) => {
     return (
         <Card className="min-w-full">
             <CardHeader>
-                <CardTitle className="flex flex-row justify-between w-full">
+                <CardTitle className="flex flex-col sm:flex-row sm:justify-between w-full gap-1">
                     {work.title}
                     <span className="text-muted-foreground text-sm">{work.date}</span>
                 </CardTitle>
