@@ -16,7 +16,7 @@ export default function Page() {
       <IntroSection />
       <WorkSection />
       <ProjectsSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
     </div>
   )
 }

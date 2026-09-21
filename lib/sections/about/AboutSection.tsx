@@ -2,7 +2,7 @@ import Section from "../../../components/Section/Section"
 
 const AboutSection = () => {
     return (
-        <Section id="about" title="About" subtitle="A little more about me" showSivider={false}>
+        <Section id="about" title="About" subtitle="A little more about me" showDivider={false}>
             <div className="flex flex-row gap-8 items-center">
                 <img src="/portrait.jpeg" alt="Profile" className="flex-shrink-0 w-32 h-32 rounded-full" />
                 <div className="flex">

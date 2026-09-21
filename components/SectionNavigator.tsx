@@ -43,9 +43,9 @@ const SectionNavigator = () => {
                 setActiveId(sectionElements[sectionElements.length - 1].id);
             }
             // close to bottom
-            else if (scrollPosition >= documentHeight - 200) {
-                setActiveId(sectionElements[sectionElements.length - 2].id);
-            }
+            // else if (scrollPosition >= documentHeight - 200) {
+            //     setActiveId(sectionElements[sectionElements.length - 2].id);
+            // }
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });

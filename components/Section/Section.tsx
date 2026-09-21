@@ -5,11 +5,11 @@ interface SectionProps {
     id: string
     title?: string
     subtitle?: string
-    showSivider?: boolean
+    showDivider?: boolean
     children?: React.ReactNode
 }
 
-const Section = ({ id, title, subtitle, children, showSivider = true }: SectionProps) => {
+const Section = ({ id, title, subtitle, children, showDivider = true }: SectionProps) => {
     return (
         <section id={id}>
             <SectionContentContainer>
@@ -21,7 +21,7 @@ const Section = ({ id, title, subtitle, children, showSivider = true }: SectionP
                         </div>
                         : null}
                     {children}
-                    {showSivider && <Separator className="mt-16" />}
+                    {showDivider && <Separator className="mt-16" />}
                 </>
             </SectionContentContainer>
         </section>
