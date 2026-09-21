@@ -6,7 +6,7 @@ const IntroSection = () => {
     return (
         <Section id="intro">
             <div className="py-40">
-                <h1 className="text-2xl font-bold">Hello there, I'm Niklas!</h1>
+                <h1 className="text-2xl font-bold">Hey there, I'm Niklas!</h1>
                 <p className="text-muted-foreground">I love to build things and write code. Currently looking for a start-up or project to pour my heart into.</p>
                 <div className="flex flex-row gap-2 mt-4">
                     <Button render={<a href="mailto:niklas@gittel.dev" />} nativeButton={false}>

@@ -6,8 +6,8 @@ import { Metadata } from "next"
 import AboutSection from "@/lib/sections/about/AboutSection"
 
 export const metadata: Metadata = {
-  title: 'Hello there!',
-  description: 'Welcome to my portfolio site!',
+  title: 'gittel.dev',
+  description: 'Welcome to my site!',
 }
 
 export default function Page() {
