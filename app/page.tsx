@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-svh w-full">
+    <div className="flex flex-col min-h-svh w-full pb-20">
       <IntroSection />
       <WorkSection />
       <ProjectsSection />
