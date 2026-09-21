@@ -127,3 +127,18 @@
     @apply font-sans;
     }
 }
+
+@keyframes page-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-enter {
+  animation: page-enter 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
