@@ -8,10 +8,7 @@ const WorkSection = () => {
             {workExperiences.map((work, index) => (
                 <WorkExperienceCard
                     key={index}
-                    title={work.title}
-                    company={work.company}
-                    date={work.date}
-                    details={work.details}
+                    work={work}
                 />
             ))}
         </Section >
