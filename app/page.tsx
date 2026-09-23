@@ -7,7 +7,25 @@ import AboutSection from "@/lib/sections/about/AboutSection"
 
 export const metadata: Metadata = {
   title: 'gittel.dev',
-  description: 'Welcome to my site!',
+  openGraph: {
+    title: 'gittel.dev',
+    url: 'https://gittel.dev',
+    siteName: 'gittel.dev',
+    images: [
+      {
+        url: 'https://gittel.dev/portrait.jpeg',
+        width: 460,
+        height: 460,
+        alt: 'gittel.dev preview image',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'gittel.dev',
+    images: ['https://gittel.dev/portrait.jpeg'], 
+  },
 }
 
 export default function Page() {
