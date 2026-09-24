@@ -21,7 +21,7 @@ const Section = ({ id, title, subtitle, children, showDivider = true }: SectionP
                         </div>
                         : null}
                     {children}
-                    {showDivider && <Separator className="mt-16" />}
+                    {showDivider && <Separator className="mt-16 sm:mt-24" />}
                 </>
             </SectionContentContainer>
         </section>
