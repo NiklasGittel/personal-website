@@ -4,5 +4,5 @@ export interface WorkExperience {
     title: string
     company: string
     date: string
-    details: WorkExperienceDetail[]
+    details?: WorkExperienceDetail[]
 }
