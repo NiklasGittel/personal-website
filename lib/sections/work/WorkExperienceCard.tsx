@@ -7,7 +7,7 @@ interface WorkExperienceCardProps {
 }
 
 const WorkExperienceCard = ({ work}: WorkExperienceCardProps) => {
-    const addHyphen = work.details.length > 1
+    const addHyphen = (work.details?.length ?? 0) > 1
     return (
         <Card className="min-w-full">
             <CardHeader>
@@ -19,9 +19,9 @@ const WorkExperienceCard = ({ work}: WorkExperienceCardProps) => {
                     {work.company}
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent >
                 <ul className="list-inside space-y-2">
-                    {work.details.map((detail, index) => (
+                    {work.details?.map((detail, index) => (
                         detail.subDetails && detail.subDetails.length > 0
                             ? (
                                 <li key={index} className="flex flex-col gap-2">

@@ -5,7 +5,7 @@ import workExperiences from "./workExperiences"
 const WorkSection = () => {
     return (
         <Section id="work" title="Work" subtitle="My professional journey so far">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 w-full">
                 {workExperiences.map((work, index) => (
                     <WorkExperienceCard
                         key={index}
